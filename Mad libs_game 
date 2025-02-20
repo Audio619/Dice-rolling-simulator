@@ -1,0 +1,94 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNfqG2Rh8L+hddSY31Uv6o4",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Audio619/Dice-rolling-simulator/blob/main/Mad%20libs_game%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7OekPw3KfX7K",
+        "outputId": "c2c6cec2-b481-402a-8851-1017ebbae29b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Welcome to Mad Libs!Fill in the blanks below:\n"
+          ]
+        }
+      ],
+      "source": [
+        "import random\n",
+        "\n",
+        "def mad_libs():\n",
+        "  print(\"Welcome to Mad Libs!Fill in the blanks below:\")\n",
+        "\n",
+        "  # Asking user for input\n",
+        "  adjective1 = input(\"Enter an adjective: \")\n",
+        "  noun1 = input(\"Enter a noun: \")\n",
+        "  verb1 = input(\"Enter a verb: \")\n",
+        "  adverb1 = input(\"Enter an adverb: \")\n",
+        "  adjective2 = input(\"Enter another adjective: \")\n",
+        "  noun2 = input(\"Enter another noun: \")\n",
+        "  verb2 = input(\"Enter another verb: \")\n",
+        "  adverb2 = input(\"Enter another adverb: \")\n",
+        "\n",
+        "  # List of possible story templates\n",
+        "  stories = [\n",
+        "      f\"Today, I saw a {adjective1} {noun1} that was {verb1} {adverb1}. It was the most {adjective2} thing I had ever seen! Then, a {noun2} {verb2} {adverb2} and made it funnier!\",\n",
+        "      f\"Once upon a time, there was a {adjective1} {noun1} who loved {verb1} {adverb1}. One day, it met a {adjective2} {noun2} that could {verb2} {adverb2}. They became best friends!\",\n",
+        "      f\"I have a {adjective1} pet {noun1}. It loves to {verb1} {adverb1}. One day, it found a {adjective2} {noun2} that started to {verb2} {adverb2}, and they had an amazing adventure together!\"\n",
+        "  ]\n",
+        "\n",
+        "  # Randomly select a story\n",
+        "  story = random.choice(stories)\n",
+        "\n",
+        "\n",
+        "\n",
+        "  print(\"\\nHere is your Mad Libs story:\\n\")\n",
+        "  print(story)\n",
+        "\n",
+        "  # Run the Mad Libs game\n",
+        "if __name__ == \"__main__\":\n",
+        "      mad_libs()\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    }
+  ]
+}
